@@ -10,6 +10,6 @@ tempVariable = variable1
 variable1 = variable2
 variable2 = tempVariable
 
-print("\n These are your variables after the swap: ")
+print("\nThese are your variables after the swap: ")
 print("Variable 1: " + variable1)
 print("Variable 2: " + variable2)
