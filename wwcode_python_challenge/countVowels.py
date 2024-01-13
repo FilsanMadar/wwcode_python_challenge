@@ -6,8 +6,8 @@ def numVowels():
     vowel = set("aeiouAEIOU")
     count = 0
 
-    for alphabet in givenStrg:
-        if alphabet in vowel:
+    for char in givenStrg:
+        if char in vowel:
             count = count + 1
     print("The number of vowels is: " + str(count))
 
