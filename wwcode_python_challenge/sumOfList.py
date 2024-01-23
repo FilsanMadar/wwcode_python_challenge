@@ -1,4 +1,6 @@
 # Day 4 : Write a program to find the sum of all elements in a list.
+import random
+
 
 def sumOfList():
 
@@ -23,4 +25,17 @@ def remove_duplicate():
 
 remove_duplicate()
 
+
+# Day 13 : Write a program to shuffle the elements of a list randomly.
+
+def shuffle_list():
+    given_string = list(input("Enter a list of numbers: "))
+    # create a copy of the original list
+    shuffled_list = given_string.copy()
+    random.shuffle(shuffled_list)
+
+    print("Original List: ", given_string)
+    print("Shuffled List: ", shuffled_list)
+
+shuffle_list()
 
