@@ -27,3 +27,32 @@ def multiplication_table():
 
 
 multiplication_table()
+
+# Day 18: Create a program to find the largest among three numbers.
+
+def max_number():
+    numbers = []  # Create an empty list to store numbers
+
+    # Prompt the user to enter 3 numbers separated by spaces
+    given_numbers = input("Enter 3 numbers separated by spaces: ")
+
+    # Split the input string into individual numbers and convert them to integers
+    numbers = [int(num) for num in given_numbers.split()]
+
+    # Check if the user has entered exactly 3 numbers
+    if len(numbers) != 3:
+        print("Please enter exactly 3 numbers.")
+        return  # Exit the function if the user input is invalid
+
+    # Find the largest number using the max() function
+    max_num = max(numbers)
+
+    # Print the result
+    print("Largest number:", max_num)
+
+# Call the function to find the largest number among three numbers
+max_number()
+
+
+
+

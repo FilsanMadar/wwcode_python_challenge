@@ -39,3 +39,20 @@ def shuffle_list():
 
 shuffle_list()
 
+# Day 20: Write a function that takes a list of numbers and returns a new list containing only the even numbers.
+
+def list_only_even_numbers():
+    # Prompt the user to enter 3 numbers separated by spaces
+    given_numbers = input("Enter list of numbers: ")
+
+    # Split the input string into individual numbers and convert them to integers
+    numbers = [int(num) for num in given_numbers.split(" ")]
+
+    # filter out only the even numbers and make it into a list by adding [ ]
+    even_numbers = [num for num in numbers if num % 2 == 0]
+
+    return even_numbers
+
+print("List of only even numbers: ", list_only_even_numbers())
+
+
