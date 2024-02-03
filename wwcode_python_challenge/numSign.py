@@ -49,4 +49,3 @@ def remove_element():
     print("Updated set = ", given_input)
 
 remove_element()
-
